@@ -74,33 +74,6 @@ npm start
 
 پس از اجرای موفقیت‌آمیز، پروژه روی محیط توسعه اجرا خواهد شد.
 
-## 📂 ساختار پروژه
-
-contact-manager-app/
-│
-├── src/
-│   │
-│   ├── components/
-│   │   ├── Contacts.js
-│   │   ├── ContactsList.js
-│   │   ├── ContactItem.js
-│   │   ├── Header.js
-│   │   └── Modal.js
-│   │
-│   ├── constants/
-│   │   └── inputs.js
-│   │
-│   ├── context/
-│   │   └── ContactsContext.jsx
-│   │
-│   ├── validation/
-│   │   └── contactSchema.js
-│   │
-│   ├── App.jsx
-│   └── index.js
-│
-├── package.json
-└── README.md
 
 ## 📝 Form Validation
 
