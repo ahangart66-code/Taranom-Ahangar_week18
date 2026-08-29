@@ -1,0 +1,180 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  max-width: 700px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  box-shadow: #304ffe25 0 7px 29px 0;
+  box-sizing: border-box;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  width: calc(50% - 20px);
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+.inputGroup input {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  border: 2px solid #eaeaea;
+  border-radius: 10px;
+  color: #304ffe;
+  font-size: 1rem;
+  outline: none;
+  box-sizing: border-box;
+  transition: 0.2s border-color ease-in-out,
+    0.2s box-shadow ease-in-out;
+}
+
+.inputGroup input:focus {
+  border-color: #304ffe;
+  box-shadow: 0 0 6px #304ffe35;
+}
+
+.inputError {
+  border-color: #ff5252 !important;
+  background-color: #fff8f8;
+}
+
+.errorMessage {
+  min-height: 18px;
+  margin-top: 5px;
+  color: #d32f2f;
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-align: right;
+}
+
+.form button {
+  width: calc(100% - 20px);
+  height: 42px;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+  background-color: #304ffe;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: 0.2s all ease-in-out;
+}
+
+.form button:hover {
+  background-color: #1a35d8;
+  box-shadow: #0c2ad487 0 7px 29px 0;
+}
+
+.btnAdd {
+  background-color: #304ffe !important;
+}
+
+.btnUpdate {
+  background-color: #2196f3 !important;
+}
+
+.alert {
+  width: 100%;
+  height: 40px;
+  margin: 5px 0 25px;
+}
+
+.alert p {
+  width: 100%;
+  padding: 10px;
+  background-color: #ffebee;
+  color: #f44336;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.deleteBatchBtn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 1rem 0;
+  padding: 12px 24px;
+  background-color: #ff5252;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(255, 82, 82, 0.3);
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s all ease;
+}
+
+.deleteBatchBtn:hover {
+  background-color: #ff1744;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(255, 82, 82, 0.4);
+}
+
+.deleteBatchBtn:active {
+  transform: translateY(0);
+}
+
+.searchContainer {
+  width: 100%;
+  max-width: 700px;
+  margin: 20px 0;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  outline: none;
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: 0.3s border-color ease-in-out,
+    0.3s box-shadow ease-in-out;
+}
+
+.searchInput:focus {
+  border-color: #2196f3;
+  box-shadow: 0 0 8px rgba(33, 150, 243, 0.2);
+}
+
+.btnCancel {
+  margin-left: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+
+  .form {
+    padding: 15px 10px;
+  }
+
+  .inputGroup {
+    width: calc(100% - 20px);
+  }
+
+  .form button {
+    width: calc(100% - 20px);
+  }
+}
